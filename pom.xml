@@ -1,32 +1,31 @@
-&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;
-xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0
-https://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
-&lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
-&lt;groupId&gt;com.example&lt;/groupId&gt;
-&lt;artifactId&gt;calculator&lt;/artifactId&gt;
-&lt;version&gt;1.0&lt;/version&gt;
-&lt;properties&gt;
-&lt;maven.compiler.source&gt;17&lt;/maven.compiler.source&gt;
-&lt;maven.compiler.target&gt;17&lt;/maven.compiler.target&gt;
-&lt;/properties&gt;
-&lt;dependencies&gt;
-&lt;dependency&gt;
-&lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
-&lt;artifactId&gt;junit-jupiter&lt;/artifactId&gt;
-&lt;version&gt;5.10.0&lt;/version&gt;
-&lt;scope&gt;test&lt;/scope&gt;
-&lt;/dependency&gt;
-&lt;/dependencies&gt;
-&lt;build&gt;
-&lt;plugins&gt;
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>calculator</artifactId>
+    <version>1.0</version>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
 
-&lt;plugin&gt;
-&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
-&lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;
-&lt;version&gt;3.2.5&lt;/version&gt;
-&lt;/plugin&gt;
-
-&lt;/plugins&gt;
-&lt;/build&gt;
-&lt;/project&gt;
+        </plugins>
+    </build>
+</project>
